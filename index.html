@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Ayush Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="\">Home</a></li>
+                    <li><a href="\">About</a></li>
+                    <li><a href="#secondSec">Skills</a></li>
+                    <li><a href="#form-foot">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Ayush</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev3_png.webp">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="secondSec">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html5-logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur laborum, nam
+                        consequuntur consectetur quibusdam beatae necessitatibus ipsum doloribus ab!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="CSS-logo.png" alt="">
+                    <div class="vertical-title">
+                        CSS 
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur laborum, nam
+                        consequuntur consectetur quibusdam beatae necessitatibus ipsum doloribus ab!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dev_png.png" alt="">
+                    <div class="vertical-title">
+                        C / C++
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur laborum, nam
+                        consequuntur consectetur quibusdam beatae necessitatibus ipsum doloribus ab!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="js-logo.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur laborum, nam
+                        consequuntur consectetur quibusdam beatae necessitatibus ipsum doloribus ab!
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer" id="form-foot">
+            <div class="form-container" style="width: 50vw;">
+                <div class="form">
+                    <span class="heading">Get in touch</span>
+                    <input placeholder="Name" type="text" class="input">
+                    <input placeholder="Email" id="mail" type="email" class="input">
+                    <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                    <div class="send-button">Send</div>
+                    <!-- <div class="reset-button-container" >
+                        <div id="reset-btn" class="reset-button" >Reset</div>
+                    </div> -->
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy; ayushportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Ui/Ux Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
